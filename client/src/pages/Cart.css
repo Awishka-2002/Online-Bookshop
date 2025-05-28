@@ -1,0 +1,148 @@
+.cart {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 80px auto 0;
+}
+
+.cart h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.item-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.item-info h3 {
+  margin: 0 0 0.5rem;
+}
+
+.item-info p {
+  margin: 0.25rem 0;
+}
+
+.item-info button {
+  margin-top: 0.5rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.item-info button:hover {
+  background-color: #c0392b;
+}
+
+.cart-summary {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.checkout-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #48a6a7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #9acbd0;
+  color: black;
+  border: 2px solid #121111;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #2980b9;
+}
+
+.quantity-controls input {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cart {
+    padding: 1rem;
+    margin-top: 135px;
+    width: 80%;
+  }
+  .quantity-controls {
+    justify-content: center;
+
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-item img {
+    width: 100px;
+    height: 140px;
+  }
+
+  .item-info {
+    width: 100%;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+
+  .checkout-btn {
+    width: 100%;
+  }
+}

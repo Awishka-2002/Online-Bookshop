@@ -1,0 +1,149 @@
+.book-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-top: 150px;
+}
+
+.book-cover {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.book-cover img {
+  width: 200px; /* or 180px or any preferred size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.book-info {
+  flex: 2 1 400px;
+}
+
+.book-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.book-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.book-info strong {
+  color: #1d3557;
+}
+
+@media (max-width: 768px) {
+  .book-details {
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 100px;
+    width: 80%;
+  }
+
+  .book-cover, .book-info {
+    flex: 1 1 100%;
+  }
+
+  .book-info h2 {
+    font-size: 1.5rem;
+  }
+}
+.button-group {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-add, .btn-buy {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.btn-add {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #2980b9;
+}
+
+.btn-buy {
+  background-color: #e67e22;
+  color: white;
+}
+
+.btn-buy:hover {
+  background-color: #d35400;
+}
+@media (max-width: 768px) {
+  .book-details {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .book-cover, .book-info {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .book-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .book-info p {
+    font-size: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-add,
+  .btn-buy {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-info h2 {
+    font-size: 1.3rem;
+  }
+  .book-details{
+    margin-top: 200px;
+  }
+
+  .book-info p {
+    font-size: 0.95rem;
+  }
+
+  .btn-add,
+  .btn-buy {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
